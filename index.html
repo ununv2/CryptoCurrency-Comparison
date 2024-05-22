@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../unun/styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/sindhu.png">
+    <title>Crypto Coins</title>
+  </head>
+
+  <body>
+    <div class="header"></div>
+    <div class="container">
+      <h1>Top Cryptocurrency Prices</h1>
+      <p>without Bitcoin</p>
+      <div class="canvas">
+        <canvas id="myChart" width="30vw" height="7vh"></canvas>
+      </div>
+      <div id="btn-container">
+        <button id="myButton" onclick="toggleButton()">
+          Highest / Lowest
+        </button>
+      </div>
+      <form>
+        <h2>Search for Coin Information</h2>
+        <label for="coinName">Enter coin name (eg. ethereum or ETH) & coin for comparison:</label>
+        <input type="text" id="getCoin" />
+        <input type="text" id="compareCoin" />
+        <button type="button" onclick="getInput()">Submit</button>
+      </form>
+
+
+
+      <div class="info-container">
+        <canvas id="percentCanvas" ></canvas>
+        <div class="outlineKrajok">
+          <div class="krajok">
+            <p id="myName"></p>
+            <p id="mySymbol"></p>
+            <p id="myPrice"></p>
+            <p id="mySupply"></p>
+            <p id="myMarket"></p>
+          </div>
+          <div class="krajok2">
+            <p id="myName2"></p>
+            <p id="mySymbol2"></p>
+            <p id="myPrice2"></p>
+            <p id="mySupply2"></p>
+            <p id="myMarket2"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../unun/script.js"></script>
+  </body>
+</html>

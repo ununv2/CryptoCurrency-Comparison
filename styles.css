@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Quicksand", sans-serif;
+}
+.container{
+  padding: 30px;
+}
+.header{
+  padding : 15px;
+  background-color: #eababa;
+}
+
+
+body {
+  background-color: #f2f2f2;
+  padding: 30px;
+}
+
+.canvas {
+  display: flex;
+  width: fit;
+  flex-direction: column;
+  margin: 20px auto;
+  text-align: center;
+  background-color: #ebd5d5;
+  border-radius: 10px;
+  padding-bottom: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.canvas #myChart{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+/* Reset default margin and padding */
+body, h1, form {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the title */
+h1 {
+
+  margin-left: 20px;
+  font-size: 36px;
+  color: #685454;
+}
+p {
+  margin-left: 20px;
+  color: #685454;
+}
+h2{
+
+  margin-bottom: 10px;
+  color: #685454;
+}
+/* Style the button */
+#btn-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+button {
+  background-color: #685454;
+  color: #f2f2f2;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition-duration: 0.2s;
+}
+button:hover{
+  scale: 1.05;
+}
+/* Style the form */
+form {
+  text-align: center;
+  margin-top: 10px;
+  color: #685454;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 200px;
+  font-size:18px;
+}
+
+button[type="button"] {
+  background-color: #685454;
+  color: #f2f2f2;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition-duration: 0.2s;
+}
+button[type="button"]:hover{
+  scale: 1.05;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 45vh;
+  justify-content: space-evenly;
+  /* border: 1px solid red; */
+  margin-top: 20px;
+  overflow: hidden;
+  
+}
+
+#percentCanvas {
+  display: inline;
+  /* border: 1px solid lime; */
+}
+
+.outlineKrajok {
+  display: flex;
+  padding: 15px;
+}
+
+.outlineKrajok .krajok {
+  display: flex;
+
+  padding-left: 10px;
+  padding-right: 10px;  
+  flex-direction: column;
+  justify-content: space-evenly;
+  /* border: red solid 1px; */
+  /* border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4); */
+}
+
+.outlineKrajok .krajok p {
+  /* border: red solid 1px; */
+  padding: 15px;
+  padding-left: 70px;
+  padding-right: 70px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition-duration: 0.5s;
+}
+
+.outlineKrajok .krajok p:empty {
+  display: none;
+
+}
+
+.outlineKrajok .krajok p:hover {
+  scale: 1.05;
+  background-color: #ebd5d5;
+}
+
+.outlineKrajok .krajok2 {
+  display: flex;
+
+  padding-left: 10px;
+  padding-right: 10px;  
+  flex-direction: column;
+  justify-content: space-evenly;
+  /* border: red solid 1px; */
+  /* border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4); */
+}
+.outlineKrajok .krajok2 p {
+  /* border: red solid 1px; */
+  padding: 15px;
+  padding-left: 70px;
+  padding-right: 70px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition-duration: 0.5s;
+}
+
+.outlineKrajok .krajok2 p:empty {
+  display: none;
+
+}
+
+.outlineKrajok .krajok2 p:hover {
+  scale: 1.05;
+  background-color: #ebd5d5;
+}
